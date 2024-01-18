@@ -2,7 +2,6 @@ const router = require("express").Router()
 const { productController } = require('../controller')
 const { multerUpload } = require('../middleware/multer')
 // const { verifyToken }
-// const { multerUpload }
 
 router.get('/', productController.getAllProduct);
 router.get('/active', productController.getAllActiveProduct);

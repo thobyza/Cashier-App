@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,11 +17,12 @@
     "handlebars": "^4.7.8",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
-    "mysql2": "^3.6.3",
+    "mysql2": "^3.6.5",
     "nodemailer": "^6.9.7",
-    "sequelize": "^6.34.0"
+    "sequelize": "^6.35.1"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.2.0"
-  }
+  },
+  "description": ""
 }

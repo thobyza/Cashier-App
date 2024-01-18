@@ -2,9 +2,15 @@ import { Flex, Icon, Image, Text } from "@chakra-ui/react";
 
 import avaDummy from "../assets/ava-dummy.png";
 import { CiSettings } from "react-icons/ci";
+import { useSelector } from "react-redux";
 
 export const UserBarInfo = () => {
   const { token } = localStorage.getItem
+
+  const user = useSelector((state) => state.user.value);
+  console.log(user);
+  const profilePicture = user.profile_picture;
+
 
   return (
     <Flex flexDirection={"column"}>
@@ -22,9 +28,9 @@ export const UserBarInfo = () => {
         </Flex>
         <Flex flexDirection="column" justifyContent="start" alignItems="start" flexGrow="1" ml={{ md: "0.5rem", lg: "1.4rem" }}>
           <Text color="#717171" fontSize="0.9rem">
-            I'm Admin
+            {user.role}
           </Text>
-          <Text fontWeight="semibold">John Doe</Text>
+          <Text fontWeight="semibold">{user.fullname}</Text>
         </Flex>
         <Flex justifyContent="end" h="full">
           <Icon

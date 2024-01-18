@@ -1,7 +1,5 @@
-"use strict";
 const { Model } = require("sequelize");
 "use strict";
-const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -22,9 +20,9 @@ module.exports = (sequelize, DataTypes) => {
       email: { type: DataTypes.STRING, allowNull: false },
       password: { type: DataTypes.STRING, allowNull: false },
       role: { type: DataTypes.ENUM("admin", "cashier"), allowNull: false },
-      isVerified: { type: DataTypes.BOOLEAN, defaultValue: false},
-      profile_picture: { type: DataTypes.STRING, allowNull: true},
-      isEnabled: {type: DataTypes.BOOLEAN,defaultValue: true}
+      isVerified: { type: DataTypes.BOOLEAN, defaultValue: false },
+      profile_picture: { type: DataTypes.STRING, allowNull: true },
+      isEnabled: { type: DataTypes.BOOLEAN, defaultValue: true }
     },
     {
       sequelize,

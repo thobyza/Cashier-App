@@ -2,7 +2,8 @@ import { Button, Flex, FormControl, FormLabel, Icon, Image, Input, Modal, ModalB
 import { IoCloudUploadOutline } from "react-icons/io5";
 import { useFormik } from 'formik';
 import * as Yup from 'yup'
-import axios from "axios";
+import axios from "axios"
+    ;
 
 export const CategoryAddModal = ({ isOpen, onClose }) => {
     const toast = useToast();

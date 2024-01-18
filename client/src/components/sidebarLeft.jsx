@@ -7,19 +7,16 @@ import {
   Flex,
   Icon,
   useColorModeValue,
-  Text,
   Drawer,
   DrawerContent,
   useDisclosure,
   Image,
-  VStack,
 } from "@chakra-ui/react";
 
 import { FiMenu } from "react-icons/fi";
 
 import { GoHome } from "react-icons/go";
 import { IoRestaurantOutline } from "react-icons/io5";
-import { IoAnalytics } from "react-icons/io5";
 import { IoBagAddOutline } from "react-icons/io5";
 
 import logoApp from "../assets/logo-alt2(2).png";
@@ -29,7 +26,6 @@ const LinkItems = [
   { name: "Home", icon: GoHome, route: "/" },
   { name: "Menu", icon: IoRestaurantOutline, route: "/product-list" },
   { name: "Admin", icon: IoBagAddOutline, route: "/admin" },
-  { name: "Report", icon: IoAnalytics, route: "/product-list" },
   //   { name: "Settings", icon: FiSettings },
 ];
 

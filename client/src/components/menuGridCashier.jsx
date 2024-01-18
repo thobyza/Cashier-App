@@ -43,8 +43,8 @@ export const MenuGridCashier = () => {
 
   const dispatch = useDispatch();
   const handleAddToCart = (item) => {
-    const { id, name, price, quantity } = item;
-    dispatch(addToCart({ id, name, price, quantity }));
+    const { id, name, img, price, quantity } = item;
+    dispatch(addToCart({ id, name, img, price, quantity }));
   };
   return (
     <>

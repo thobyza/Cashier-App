@@ -1,12 +1,11 @@
 import { Box, Flex, Icon, Table, TableContainer, Tbody, Td, Text, Th, Thead, Tr } from "@chakra-ui/react"
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { MdStickyNote2 } from "react-icons/md";
+import { TransactionDataMap } from "./transactionDataMap"
 
 
 export const TransactionHistory = () => {
     // const token = localStorage.getItem("token")
-
     const [transactionData, setTransactionData] = useState([])
 
     const fetchTransactionData = async () => {
@@ -22,42 +21,15 @@ export const TransactionHistory = () => {
 
     console.log(transactionData);
 
-    // convert date format
-    const formatDate = (dateString) => {
-        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-        const date = new Date(dateString);
-
-        const day = date.getDate().toString().padStart(2, '0');
-        const month = months[date.getMonth()];
-        const year = date.getFullYear().toString().slice(-2);
-        const hours = date.getHours().toString().padStart(2, '0');
-        const minutes = date.getMinutes().toString().padStart(2, '0');
-
-        const formattedDate = `${day} ${month} ${year}, ${hours}:${minutes}`;
-
-        return formattedDate;
-    }
-    // convert price format
-    const convertToIDR = (price) => {
-        const priceStr = price.toString().split('');
-
-        for (let i = priceStr.length - 3; i > 0; i -= 3) {
-            priceStr.splice(i, 0, '.');
-        }
-        const formattedPrice = priceStr.join('');
-        return formattedPrice;
-    }
-
 
     useEffect(() => {
         fetchTransactionData()
     }, [])
 
     return (
-        <Box>
+        <Box mt="1.2rem">
             <Text fontSize="1.2rem" fontWeight="semibold" mb="1rem">
-                Transaction History
+                Recent Order
             </Text>
             <TableContainer
                 bg="white"
@@ -80,35 +52,7 @@ export const TransactionHistory = () => {
                     </Thead>
                     <Tbody>
                         {transactionData.map((item) => (
-                            <Tr>
-                                <Td fontWeight="semibold" textColor="#425270">{item.id}</Td>
-                                <Td>{formatDate(item.createdAt)}</Td>
-                                <Td>{item.Transaction_details?.length}</Td>
-                                <Td>Rp {convertToIDR(item.total_amount)}</Td>
-                                <Td>{item.User?.fullname}</Td>
-                                <Td isNumeric>
-                                    <Flex justifyContent="space-between">
-                                        <Flex></Flex>
-                                        <Flex
-                                            bg="#719BF4"
-                                            p="0.3rem"
-                                            borderRadius="md"
-                                            _hover={{
-                                                bg: "#4D81F1",
-                                                cursor: "pointer",
-                                                transitionDuration: "0.4s",
-                                                transitionTimingFunction: "ease-in-out",
-                                            }}
-                                        >
-                                            <Icon
-                                                as={MdStickyNote2}
-                                                fontSize="1rem"
-                                                textColor="white"
-                                            ></Icon>
-                                        </Flex>
-                                    </Flex>
-                                </Td>
-                            </Tr>
+                            <TransactionDataMap getItem={item} />
                         ))}
                     </Tbody>
                 </Table>

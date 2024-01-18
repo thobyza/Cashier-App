@@ -5,9 +5,9 @@ const transactionController = require("./transactionController")
 const salesReportController = require("./salesReportController")
 
 module.exports = {
-  userController,
-  productController,
-  categoryController,
-  transactionController,
-  salesReportController
+    userController,
+    productController,
+    categoryController,
+    transactionController,
+    salesReportController
 };

@@ -26,13 +26,12 @@ export const MenuCashier = () => {
         </GridItem>
         {/* Bills */}
         <GridItem
-          py="7"
           colSpan={2}
-          // h="100vh"
+          h="100vh"
           // w="full"
           bg="#F9F8FB"
           display={{ base: "none", lg: "block" }}
-          gap="4"
+        // gap="2"
         >
           <BillsBar />
           {/* <Box pos="fixed" w="20%">

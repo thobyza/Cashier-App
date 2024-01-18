@@ -22,7 +22,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       description: {
-        type: Sequelize.TEXT
+        type: Sequelize.STRING
       },
       isActive: {
         type: Sequelize.BOOLEAN

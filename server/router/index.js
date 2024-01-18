@@ -5,9 +5,9 @@ const transactionRouter = require("./transactionRouter")
 const salesReportRouter = require("./salesReportRouter")
 
 module.exports = {
-  userRouter,
-  productRouter,
-  categoryRouter,
-  transactionRouter,
-  salesReportRouter
+    userRouter,
+    productRouter,
+    categoryRouter,
+    transactionRouter,
+    salesReportRouter
 };

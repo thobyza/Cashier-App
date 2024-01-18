@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
   Transaction.init({
     total_amount: { type: DataTypes.INTEGER, defaultValue: 0 },
     customer_amount: { type: DataTypes.INTEGER, defaultValue: 0 },
-    change : { type: DataTypes.INTEGER, defaultValue:0 }
+    change: { type: DataTypes.INTEGER, defaultValue: 0 }
   }, {
     sequelize,
     modelName: 'Transaction',

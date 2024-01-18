@@ -1,12 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { WelcomePage } from "./pages/WelcomePage";
 import { LoginUser } from "./components/Login";
 import { RegisterUser } from "./components/Register";
 import { MenuPage } from "./pages/MenuPage";
 import { CreateProductPage } from "./pages/createProductPage";
 import { AdminPage } from "./pages/adminPage";
 
-import { Profile } from "./components/Profile/Profile";
 import { RegisterCashier } from "./components/RegisterCashier";
 import EditProfilePage from "./components/Profile/EditProfile";
 import HomePage from "./pages/HomePage";
@@ -17,14 +15,13 @@ import { setData } from "./redux/userSlice";
 import { ProductDetailPage } from "./pages/productDetailPage";
 import axios from "axios";
 import { CategoryManagePage } from "./pages/categoryManagePage";
-import { StatusProductModal } from "./components/productDetail/statusProductModal";
-import { EditProductModal } from "./components/productDetail/editProductModal";
 import { MenuCashier } from "./pages/MenuPageCashier";
 import { SalesReportPage } from "./pages/salesReportPage";
 import ListCashier from "./pages/listCashier";
 import ResetPasswordFormEmail from "./components/ResetPasswordemail";
 import ResetPasswordForm from "./components/ResetPassword";
 import Verify from "./pages/verify";
+import { LandingPage } from "./pages/landingPage";
 
 const router = createBrowserRouter([
   { path: "/home", element: <HomePage /> },
@@ -51,8 +48,8 @@ const router = createBrowserRouter([
   { path: "/sales-report", element: <SalesReportPage /> },
 
   { path: "/product-detail", element: <ProductDetailPage /> },
-  // Testing Modal
   { path: "/verify/:id", element: <Verify /> },
+  { path: "/landing", element: <LandingPage /> }
 ]);
 
 function App() {

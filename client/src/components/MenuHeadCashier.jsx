@@ -30,7 +30,7 @@ export const MenuHeadCashier = () => {
           textColor="#1C2537"
           ml="1"
         >
-          Menu TASmart
+          Menu
         </Text>
         <InputGroup
           w={{ base: "full", lg: "20rem" }}
