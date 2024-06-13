@@ -11,7 +11,7 @@ body {
 /* Event Card List */
 .card-slideshow::after {
   content: "";
-  flex: 0 0 2rem;
+  flex: 0 0 2rem; 
 }
 
 .card-slideshow::-webkit-scrollbar {
