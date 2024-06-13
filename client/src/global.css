@@ -15,7 +15,7 @@ body {
 }
 
 .card-slideshow::-webkit-scrollbar {
-  display: none;
+  display: none; 
 }
  
 @layer utilities {
