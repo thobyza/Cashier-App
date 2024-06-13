@@ -13,7 +13,7 @@ export const LandingPage = () => {
                         <Flex flex="1" flexDirection="column" justifyContent="space-between" py="1.2rem">
                             <Flex>
                                 <Text fontSize="4.2rem" fontWeight="semibold" textColor="white" lineHeight="5rem">
-                                    A Point of Sale You Can{" "}
+                                    A Point of Sale You Can{" "} 
                                     <Text as="span" bgGradient='linear(to-r, #98C5E5, #4C87ED)'
                                         bgClip='text'>
                                         Depend On
