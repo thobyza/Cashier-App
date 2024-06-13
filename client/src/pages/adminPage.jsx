@@ -45,7 +45,7 @@ export const AdminPage = () => {
           colSpan={{ base: "10", md: "6", lg: "7" }}
           w="full"
           bg="#F6FAFEFF"
-          // bg="#F9F8FB"
+          // bg="#F9F8FB" 
           pl={{ base: "3", md: "11vw", lg: "10vw" }}
           pr={{ base: "3", md: "1", lg: "5" }}
           py="7"
