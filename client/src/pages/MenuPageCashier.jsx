@@ -33,7 +33,7 @@ export const MenuCashier = () => {
         // gap="2"
         >
           <BillsBar />
-          {/* <Box pos="fixed" w="20%">
+          {/*  <Box pos="fixed" w="20%">
             <UserBarInfo />
           </Box> */}
         </GridItem>
