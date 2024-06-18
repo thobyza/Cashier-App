@@ -35,7 +35,7 @@ export const MenuCashier = () => {
           <BillsBar />
           {/*  <Box pos="fixed" w="20%">
             <UserBarInfo />
-          </Box> */}
+          </Box> */} 
         </GridItem>
       </Grid>
     </>
