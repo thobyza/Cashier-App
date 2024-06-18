@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image, Stack, Text } from "@chakra-ui/react"
 import WithSubnavigation from "../components/navbarLanding"
 import banner1 from "../assets/landingPage/bannerr.png"
-
+ 
 export const LandingPage = () => {
     return (
         <Box bg="#2C2939">
