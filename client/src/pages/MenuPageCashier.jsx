@@ -13,7 +13,6 @@ export const MenuCashier = () => {
       >
         {/* Menu Main */}
         <GridItem
-          // colSpan={7}
           colSpan={{ base: "9", lg: "7" }}
           // h="100vh"
           w="full"
