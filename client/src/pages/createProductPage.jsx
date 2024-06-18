@@ -12,7 +12,7 @@ import axios from "axios";
 import { useEffect } from "react";
 
 export const CreateProductPage = () => {
-  // get token from localstorage---
+  // get token from localstorage...
 
   const toast = useToast();
 
