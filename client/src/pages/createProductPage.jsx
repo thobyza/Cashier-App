@@ -47,8 +47,7 @@ export const CreateProductPage = () => {
         formData.append("stock", values.stock);
         formData.append("description", values.description);
         formData.append("img", values.img);
-
-        // console.log(formData);
+        
         await axios.post('http://localhost:2000/products', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
