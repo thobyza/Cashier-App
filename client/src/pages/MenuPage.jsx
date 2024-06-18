@@ -34,7 +34,7 @@ export const MenuPage = () => {
           // w="full"
           bg="#F6FAFEFF"
           display={{ base: "none", lg: "block" }}
-          gap="4"
+          gap="4" 
         >
           {/* <BillsBar /> */}
           <Box pos="fixed" w="20%">
