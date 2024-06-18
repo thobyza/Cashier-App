@@ -21,7 +21,7 @@ export const MenuCashier = () => {
           pl="6vw"
           py="7"
           pr="3vw"
-        >
+        > 
           <MenuHeadCashier />
         </GridItem>
         {/* Bills */}
