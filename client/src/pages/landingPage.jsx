@@ -36,7 +36,7 @@ export const LandingPage = () => {
                                     href={"#"}
                                     borderRadius="full"
                                     py="1.4rem"
-                                    px="1.8rem"
+                                    px="1.8rem" 
                                     sx={{
                                         transition: "ease-out 0.5s",
                                         boxShadow: "inset 0 0 0 0 #ffff"
