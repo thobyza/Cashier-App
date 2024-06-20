@@ -14,7 +14,7 @@ export const MenuPage = () => {
       >
         {/* Menu Main */}
         <GridItem
-          // colSpan={7}
+          // colSpan={7} 
           colSpan={{ base: "9", lg: "7" }}
           // h="100vh"
           w="full"
