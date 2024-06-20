@@ -31,7 +31,7 @@ export const MenuPage = () => {
           py="7"
           colSpan={2}
           // h="100vh"
-          // w="full"
+          // w="full" 
           bg="#F6FAFEFF"
           display={{ base: "none", lg: "block" }}
           gap="4"  
