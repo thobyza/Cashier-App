@@ -21,7 +21,7 @@ import {
         color="white"
         textAlign="center"
         padding="4"
-      >
+      > 
         <Box>
           <Heading fontSize="4xl" mb="4">
             Selamat Datang di Tasmart

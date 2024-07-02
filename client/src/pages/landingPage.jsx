@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image, Stack, Text } from "@chakra-ui/react"
 import WithSubnavigation from "../components/navbarLanding"
 import banner1 from "../assets/landingPage/bannerr.png"
-
+ 
 export const LandingPage = () => {
     return (
         <Box bg="#2C2939">
@@ -13,7 +13,7 @@ export const LandingPage = () => {
                         <Flex flex="1" flexDirection="column" justifyContent="space-between" py="1.2rem">
                             <Flex>
                                 <Text fontSize="4.2rem" fontWeight="semibold" textColor="white" lineHeight="5rem">
-                                    A Point of Sale You Can{" "}
+                                    A Point of Sale You Can{" "} 
                                     <Text as="span" bgGradient='linear(to-r, #98C5E5, #4C87ED)'
                                         bgClip='text'>
                                         Depend On
@@ -36,7 +36,7 @@ export const LandingPage = () => {
                                     href={"#"}
                                     borderRadius="full"
                                     py="1.4rem"
-                                    px="1.8rem"
+                                    px="1.8rem" 
                                     sx={{
                                         transition: "ease-out 0.5s",
                                         boxShadow: "inset 0 0 0 0 #ffff"

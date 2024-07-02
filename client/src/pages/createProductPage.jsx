@@ -12,7 +12,7 @@ import axios from "axios";
 import { useEffect } from "react";
 
 export const CreateProductPage = () => {
-  // get token from localstorage---
+  // get token from localstorage...
 
   const toast = useToast();
 
@@ -47,8 +47,7 @@ export const CreateProductPage = () => {
         formData.append("stock", values.stock);
         formData.append("description", values.description);
         formData.append("img", values.img);
-
-        // console.log(formData);
+        
         await axios.post('http://localhost:2000/products', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',

@@ -1,7 +1,7 @@
 /* Font
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700,800&display=swap");
-
+ 
 body {
   /* font-family: "Poppins", sans-serif; */
 /* font-family: "Plus Jakarta Sans", sans-serif;
@@ -11,13 +11,13 @@ body {
 /* Event Card List */
 .card-slideshow::after {
   content: "";
-  flex: 0 0 2rem;
+  flex: 0 0 2rem; 
 }
 
 .card-slideshow::-webkit-scrollbar {
-  display: none;
+  display: none; 
 }
-
+ 
 @layer utilities {
   @variants responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -32,3 +32,4 @@ body {
     }
   }
 }
+ 

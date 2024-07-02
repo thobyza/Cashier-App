@@ -14,7 +14,7 @@ export const MenuPage = () => {
       >
         {/* Menu Main */}
         <GridItem
-          // colSpan={7}
+          // colSpan={7} 
           colSpan={{ base: "9", lg: "7" }}
           // h="100vh"
           w="full"
@@ -31,10 +31,10 @@ export const MenuPage = () => {
           py="7"
           colSpan={2}
           // h="100vh"
-          // w="full"
+          // w="full" 
           bg="#F6FAFEFF"
           display={{ base: "none", lg: "block" }}
-          gap="4"
+          gap="4"  
         >
           {/* <BillsBar /> */}
           <Box pos="fixed" w="20%">

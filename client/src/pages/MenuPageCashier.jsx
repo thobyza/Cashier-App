@@ -13,7 +13,6 @@ export const MenuCashier = () => {
       >
         {/* Menu Main */}
         <GridItem
-          // colSpan={7}
           colSpan={{ base: "9", lg: "7" }}
           // h="100vh"
           w="full"
@@ -21,7 +20,7 @@ export const MenuCashier = () => {
           pl="6vw"
           py="7"
           pr="3vw"
-        >
+        > 
           <MenuHeadCashier />
         </GridItem>
         {/* Bills */}
@@ -34,9 +33,9 @@ export const MenuCashier = () => {
         // gap="2"
         >
           <BillsBar />
-          {/* <Box pos="fixed" w="20%">
+          {/*  <Box pos="fixed" w="20%">
             <UserBarInfo />
-          </Box> */}
+          </Box> */} 
         </GridItem>
       </Grid>
     </>
