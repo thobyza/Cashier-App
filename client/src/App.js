@@ -31,10 +31,7 @@ const router = createBrowserRouter([
   { path: "/create-product", element: <CreateProductPage /> },
   { path: "/admin", element: <AdminPage /> },
 
-  { path: "/product-list", element: <MenuPage /> },
   { path: "/list-cashier", element: <ListCashier /> },
-  { path: "/create-product", element: <CreateProductPage /> },
-  { path: "/admin", element: <AdminPage /> },
   { path: "/register-cashier", element: <RegisterCashier /> },
 
   { path: "/menu-cashier", element: <MenuCashier /> },
